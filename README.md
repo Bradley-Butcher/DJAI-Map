@@ -16,3 +16,6 @@ pip install .
 
 ## Usage
 
+```bash
+djai-map --help
+```
