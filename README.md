@@ -2,7 +2,7 @@
 
 <!-- Insert preview.png -->
 <center>
-<img src="preview.png" width=900 height=500>
+<img src="preview.png">
 </center>
 
 ## Table of Contents
