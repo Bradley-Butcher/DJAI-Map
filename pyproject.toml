@@ -1,0 +1,24 @@
+
+[project]
+name = "DJAI-Map"
+version = "0.1.0"
+description = "AI Transition Map for DJs"
+authors = [
+    {name = "Bradley-Butcher", email = "braddpbutcher@gmail.com"},
+]
+dependencies = [
+    "chromadb>=0.3.26",
+    "librosa>=0.10.0.post2",
+    "typer[all]>=0.9.0",
+    "loguru>=0.7.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.scripts]
+djai-map = "djai.cli:cli"
