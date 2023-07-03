@@ -15,11 +15,12 @@
 Quick little hackathon to try and create a "transition map" between songs using an encoder-based transformer model.
 
 ## Installation
+First install pdm via `pip install pdm` and then run
 
 ```bash
 pdm install
 ```
-alternatively
+Alternatively
 ```bash
 pip install .
 ```

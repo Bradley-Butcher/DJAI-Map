@@ -11,6 +11,11 @@ dependencies = [
     "librosa>=0.10.0.post2",
     "typer[all]>=0.9.0",
     "loguru>=0.7.0",
+    "transformers>=4.30.2",
+    "torch>=2.0.1",
+    "lit==16.0.5",
+    "streamlit-agraph>=0.0.45",
+    "nnAudio>=0.3.2",
 ]
 requires-python = ">=3.10"
 readme = "README.md"

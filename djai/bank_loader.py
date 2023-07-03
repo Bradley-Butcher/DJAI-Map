@@ -23,7 +23,7 @@ class AudioProcessor:
                 shutil.rmtree(persist_directory)
             else:
                 raise ValueError(f"Directory {persist_directory} already exists. Remove it or choose another directory.")
-        self.chroma_client = chromadb.Client(
+        self.chroma_client: chromadb.Client = chromadb.Client(
             Settings(
                 chroma_db_impl="duckdb+parquet",
                 persist_directory=str(persist_directory.resolve())
@@ -54,4 +54,3 @@ class AudioProcessor:
                     self._vectorize_and_store(dest_chunk, audio_track.name, dest_collection)
                 pbar.update()
         logger.info(f"Vectorized and stored {total_files} audio files.")
-        self.chroma_client.close()

@@ -2,7 +2,6 @@
 from transformers import Wav2Vec2FeatureExtractor
 from transformers import AutoModel
 import torch
-from torch import nn
 
 class MusicVectorizer:
     def __init__(self) -> None:

@@ -3,7 +3,6 @@ import itertools
 import chromadb
 from chromadb.config import Settings
 import networkx as nx
-from matplotlib import pyplot as plt
 from typing import List, Optional
 from pathlib import Path
 from tqdm import tqdm
@@ -170,8 +169,8 @@ class TransitionNetwork(nx.DiGraph):
             edge_message = f"f: {from_time}\nt: {to_time}"
             edges.append(Edge(source=edge[0], target=edge[1], label=edge_message))
         config = Config(
-            width=1000,
-            height=1000,
+            width=700,
+            height=500,
             directed=True, 
             physics=False, 
             hierarchical=False,
